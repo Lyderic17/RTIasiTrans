@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Lyderic17/RTIasiTrans/static/css/main.e7cbc431.css",
-    "main.js": "/Lyderic17/RTIasiTrans/static/js/main.d27f5fc9.js",
-    "static/js/453.73dfc28f.chunk.js": "/Lyderic17/RTIasiTrans/static/js/453.73dfc28f.chunk.js",
-    "index.html": "/Lyderic17/RTIasiTrans/index.html",
-    "main.e7cbc431.css.map": "/Lyderic17/RTIasiTrans/static/css/main.e7cbc431.css.map",
-    "main.d27f5fc9.js.map": "/Lyderic17/RTIasiTrans/static/js/main.d27f5fc9.js.map",
-    "453.73dfc28f.chunk.js.map": "/Lyderic17/RTIasiTrans/static/js/453.73dfc28f.chunk.js.map"
+    "main.css": "/RTIasiTrans/static/css/main.e7cbc431.css",
+    "main.js": "/RTIasiTrans/static/js/main.dfe94f43.js",
+    "static/js/453.73dfc28f.chunk.js": "/RTIasiTrans/static/js/453.73dfc28f.chunk.js",
+    "index.html": "/RTIasiTrans/index.html",
+    "main.e7cbc431.css.map": "/RTIasiTrans/static/css/main.e7cbc431.css.map",
+    "main.dfe94f43.js.map": "/RTIasiTrans/static/js/main.dfe94f43.js.map",
+    "453.73dfc28f.chunk.js.map": "/RTIasiTrans/static/js/453.73dfc28f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7cbc431.css",
-    "static/js/main.d27f5fc9.js"
+    "static/js/main.dfe94f43.js"
   ]
 }
