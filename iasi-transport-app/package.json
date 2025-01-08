@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   
-  "homepage": "https://github.com/Lyderic17/RTIasiTrans",
+  "homepage": "https://lyderic17.github.io/RTIasiTrans",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
