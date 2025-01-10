@@ -18,6 +18,11 @@
       "sizes": "256x256"
     },
     {
+      "src": "corgi-bus.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
       "src": "tram.png",
       "type": "image/png",
       "sizes": "512x512"
