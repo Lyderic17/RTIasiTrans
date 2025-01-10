@@ -5,6 +5,8 @@ import { MapContainer, TileLayer, Marker, Popup, Polyline } from "react-leaflet"
 import L from "leaflet";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "leaflet/dist/leaflet.css";
+import './App.css';
+
 
 // Fix for Leaflet's default icon issue
 delete L.Icon.Default.prototype._getIconUrl;
@@ -34,14 +36,14 @@ const VEHICLE_TYPES = {
 // Custom icons for different vehicle types
 const createCustomIcon = (vehicleType) => {
   let iconUrl;
-  let iconSize = [30, 30]; // Larger icons
+  let iconSize = [50, 50]; // Larger icons
 
   switch (vehicleType) {
     case "Tram":
-      iconUrl = "https://cdn.icon-icons.com/icons2/1448/PNG/512/42537tram_99053.png"; // Tram icon
+      iconUrl = "https://cdn-icons-png.flaticon.com/512/2926/2926751.png"; // Tram icon
       break;
     case "Bus":
-      iconUrl = "https://cdn-icons-png.flaticon.com/512/9249/9249336.png"; // Bus icon
+      iconUrl = "https://cdn-icons-png.flaticon.com/512/10118/10118929.png"; // Bus icon
       break;
     default:
       iconUrl = "../public/tram.png"; // Default icon
@@ -254,9 +256,9 @@ function App() {
       {/* Stop Selector */}
       {stops.length > 0 && (
         <Form.Group className="mb-4">
-          <Form.Label>Select a Bus/Tram Stop</Form.Label>
+          <Form.Label>Selectionne un arrêt Bus/Tram </Form.Label>
           <Form.Control as="select" onChange={handleStopSelection}>
-            <option value="">Choose a stop...</option>
+            <option value="">Choisis un arrêt...</option>
             {stops.map((stop) => (
               <option key={stop.stop_id} value={stop.stop_id}>
                 {stop.stop_name || "Unnamed Stop"}
@@ -268,7 +270,7 @@ function App() {
 
       {/* Fetch Vehicles Button */}
       {selectedStop && (
-        <div className="text-center mb-4" style={{ border: "2px solid blue" }}>
+        <div className="text-center mb-4">
           <Button variant="primary" onClick={fetchVehiclePositions} disabled={loading}>
             {loading ? "Loading..." : "Fetch Vehicles"}
           </Button>
@@ -290,9 +292,9 @@ function App() {
       {/* Route Selector */}
       {vehicles.length > 0 && (
         <Form.Group className="mb-4">
-          <Form.Label>Select a Route</Form.Label>
+          <Form.Label>Selectionne un bus ou un tram</Form.Label>
           <Form.Control as="select" onChange={handleRouteSelection}>
-            <option value="">Choose a route...</option>
+            <option value="">Choisis un bus ou un tram...</option>
             <optgroup label="Trams">
               {[...new Set(tramRoutes.map((vehicle) => vehicle.route_short_name))].map((route) => (
                 <option key={route} value={route}>

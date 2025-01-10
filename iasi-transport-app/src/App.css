@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+/* General Styles */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute, playful font */
+  background-color: #ffeff5; /* Light pink background */
+  color: #ff69b4; /* Hot pink text color */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container Styles */
+.container {
+  background-color: #fff0f5; /* Light pink container background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header Styles */
+h1 {
+  color: #ff1493; /* Deep pink header color */
+  font-family: 'Pacifico', cursive; /* Cute, cursive font for the header */
+  text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5); /* Soft pink shadow */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Button Styles */
+.btn-primary {
+  background-color: #ff69b4; /* Hot pink button background */
+  border-color: #ff69b4;
+  color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  border-color: #ff1493;
+}
+
+/* Form Styles */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ff69b4;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.form-label {
+  color: #ff1493; /* Deep pink label color */
+}
+
+/* Map Container Styles */
+.map-container {
+  border: 2px solid #ff69b4;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff0f5; /* Light pink background for the map container */
+}
+
+/* Spinner Styles */
+.spinner-border {
+  color: #ff69b4; /* Hot pink spinner */
+}
+
+/* Alert Styles */
+.alert-danger {
+  background-color: #ff69b4; /* Hot pink alert background */
+  border-color: #ff1493;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Corgi-themed Background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/corgi1126px.png'); /* Corgi pattern background */
+  opacity: 0.6; /* Light opacity so it doesn't overpower the content */
+  z-index: -1;
+  pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Popup Styles */
+.leaflet-popup-content {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #ff1493; /* Deep pink text in popups */
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #fff0f5; /* Light pink popup background */
+  border-radius: 10px;
+  border: 1px solid #ff69b4;
+}
+
+.leaflet-popup-tip {
+  background-color: #fff0f5; /* Light pink popup tip */
+}
+
+/* Custom Icons */
+.leaflet-marker-icon {
+  filter: drop-shadow(2px 2px 4px rgba(255, 105, 180, 0.5)); /* Soft pink shadow for icons */
+}
+
+/* Animation for Fun */
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-10px);
   }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Add floating animation to the header */
+h1 {
+  animation: float 3s ease-in-out infinite;
 }

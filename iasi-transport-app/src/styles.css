@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Dropdown Menu */
+  .form-control {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background: linear-gradient(135deg, #007bff, #00bfff);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #0099cc);
+  }
+  
+  .btn-primary:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Loading Spinner */
+  .spinner-border {
+    margin-right: 8px;
+  }
+  
+  /* Error Message */
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Map Container */
+  .map-container {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    height: 400px;
+    margin-top: 20px;
+    overflow: hidden; /* Ensure the map doesn't overflow */
+  }
+  
+  /* Popup Styling */
+  .leaflet-popup-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .leaflet-popup-content strong {
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .map-container {
+      height: 300px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .form-control {
+      font-size: 14px;
+    }
+  
+    .btn-primary {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Footer (Optional) */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
