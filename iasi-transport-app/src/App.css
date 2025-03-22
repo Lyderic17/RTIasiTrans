@@ -75,7 +75,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../public/corgi1126px.png'); /* Corgi pattern background */
+  background-image: url('corgi1126px.png'); /* Corgi pattern background */
   opacity: 0.6; /* Light opacity so it doesn't overpower the content */
   z-index: -1;
   pointer-events: none;
