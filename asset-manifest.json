@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/RTIasiTrans/static/css/main.224312c3.css",
-    "main.js": "/RTIasiTrans/static/js/main.fcadb358.js",
+    "main.css": "/RTIasiTrans/static/css/main.42a4f4ed.css",
+    "main.js": "/RTIasiTrans/static/js/main.4e621b50.js",
     "static/js/453.73dfc28f.chunk.js": "/RTIasiTrans/static/js/453.73dfc28f.chunk.js",
     "index.html": "/RTIasiTrans/index.html",
-    "main.224312c3.css.map": "/RTIasiTrans/static/css/main.224312c3.css.map",
-    "main.fcadb358.js.map": "/RTIasiTrans/static/js/main.fcadb358.js.map",
+    "main.42a4f4ed.css.map": "/RTIasiTrans/static/css/main.42a4f4ed.css.map",
+    "main.4e621b50.js.map": "/RTIasiTrans/static/js/main.4e621b50.js.map",
     "453.73dfc28f.chunk.js.map": "/RTIasiTrans/static/js/453.73dfc28f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.224312c3.css",
-    "static/js/main.fcadb358.js"
+    "static/css/main.42a4f4ed.css",
+    "static/js/main.4e621b50.js"
   ]
 }
