@@ -37,7 +37,7 @@ const VEHICLE_TYPES = {
 const createCustomIcon = (vehicleType) => {
   let iconUrl;
   let iconSize = [50, 50]; // Larger icons
-
+  console.log("Update for github");
   switch (vehicleType) {
     case "Tram":
       iconUrl = "https://cdn-icons-png.flaticon.com/512/2926/2926751.png"; // Tram icon
